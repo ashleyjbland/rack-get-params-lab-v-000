@@ -29,8 +29,9 @@ class Application
         resp.write "We don't have that item"
       end
     else
-      resp.finish
+      resp.write "Path Not Found"
     end
+    resp.finish
   end
 
   def handle_search(search_term)
