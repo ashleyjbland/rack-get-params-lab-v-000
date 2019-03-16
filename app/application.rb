@@ -29,8 +29,8 @@ class Application
         resp.write "We don't have that item"
       end
     else
-    resp.finish
-  end
+      resp.finish
+    end
   end
 
   def handle_search(search_term)
